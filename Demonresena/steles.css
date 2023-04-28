@@ -1,0 +1,43 @@
+html
+{
+    background-image: url(1150497.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body{
+    width: 280px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.imagen-usuario{
+    width: 20px;
+    height: 60px;
+    display: flex;
+    background-color: white;
+    background-size: 200px;
+}
+
+.reseña{
+    text-align: top 80px;
+    width: 900px;
+    height: 350px;
+     background-color: rgba(53, 53, 53, .8);
+     border-radius: 5px;
+     display: flex;
+     margin-left: 650px;
+     color: rgb(240, 214, 187);
+ }
+ 
+ .comentario{
+     background-color: rgba(53, 53, 53, .8);
+     color: rgb(240, 214, 187);
+     width: 250px;
+     border-radius: 10px;
+ }
