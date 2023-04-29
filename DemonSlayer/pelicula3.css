@@ -6,6 +6,7 @@ html
     background-size: cover;
     background-attachment: fixed;
 }
+
 .divfondotitle
 {
     background-color: rgb(53, 53, 53);
@@ -16,6 +17,59 @@ html
     right: 4.5%;
     top: 5%;
     border-radius: 20px;
+}
+.menu
+{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    background-color: none;
+    position: fixed;
+    right: 40px;     
+    background-size: 100%;
+    z-index: 1000;
+    padding-top: 30px;
+}
+.menu li
+{
+    padding: 10px 4px;
+    background-color: rgb(53, 53, 53);
+    float: right;
+    border-radius: 4px;
+}
+.desplegable-li
+{
+    position: relative;
+    transition: .3s ease;
+    list-style: none;
+    color: rgb(240, 214, 187);
+    padding: 5px;
+}
+.desplegable-li:hover .desplegable
+{
+    display: block;
+    opacity: 1;
+
+}
+.desplegable
+{
+    background-color: rgb(61, 61, 61);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    opacity: 0;
+    display: none;
+    list-style: none;
+}
+nav a
+{
+    text-align: justify;
+    padding: 5px;
+    color: rgb(240, 214, 187);
+    text-decoration: none;
 }
 .postitle
 {

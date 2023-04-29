@@ -1,3 +1,4 @@
+/* Parte del menu */
 html{
     background-image: url(../IniciosesionFYM/cine.jpg);
     background-repeat: no-repeat;
@@ -6,21 +7,25 @@ html{
     background-attachment: fixed;
     scroll-behavior: smooth;
 }
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body
 {
     margin: 0;
 }
 .logo{
-
     position: fixed;
-    left: 6.2%;
-    top: 1%;
+    padding-left: 25px;
 }
-
+/*  */
 .Buscador {
     position: absolute;
     left: 15%;
-    top: 11%;
+    top: 21%;
     transform: translate(0%,-50%);
     padding: 50px;
     
@@ -54,118 +59,30 @@ h1{
 .Buscador:hover input {
     width: 1000px;}
 
-    .pelicula1{
+.contenedorpeli
+{
+    width: 60%;
+    height: fit-content;
+    position: absolute;
+    align-content: center;
+    top: 65%;
+    left: 25%;
+    border-style: solid;
+    border-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pelicula
+{
+    background-size: cover;
+    display: flexbox;
+    flex-direction: row;
+    width: 225px;
+    height: 325px;
+    border-radius: 15px;
+}
 
-        background-image: url(Batman.jpg);
-        background-size: cover;
-        position: absolute;
-        left: 18%;
-        top: 48%;
-    
-        width: 225px;
-        height: 325px;
-        border: 1px solid rgb(53, 53, 53);
-        border-radius: 15px;
-
-
-    }
-    
-    .pelicula2{
-    
-        background-image: url(avatar2.jpg);
-        background-size: cover;
-        position: absolute;
-        left: 47%;
-        top: 48%;
-    
-        width: 225px;
-        height: 325px;
-        border: 1px solid rgb(53, 53, 53);
-        border-radius: 15px;
-    
-    }
-    
-    .pelicula3{
-        background-image: url(Coraline_y_la_puerta_secreta-509800788-large.jpg);
-        background-size: cover;
-        position: absolute;
-        left: 75%;
-        top: 48%;
-    
-        width: 225px;
-        height: 325px;
-        border: 1px solid rgb(53, 53, 53);
-        border-radius: 15px;
-    
-    }
-
-    .pelicula4{
-
-        background-image: url(../FYMYOSHIO/Minions\ caratula.jpg);
-        background-size: cover;
-        position: absolute;
-        left: 18%;
-        top: 108%;
-    
-        width: 225px;
-        height: 325px;
-        border: 1px solid rgb(53, 53, 53);
-        border-radius: 15px;
-    
-    }
-    
-    .pelicula5{
-    
-        background-image: url(../FYMYOSHIO/demon\ slayer\ caratula.jpg);
-        background-size: cover;
-        position: absolute;
-        left: 47%;
-        top: 108%;
-    
-        width: 225px;
-        height: 325px;
-        border: 1px solid rgb(53, 53, 53);
-        border-radius: 15px;
-    
-    }
-    
-    .pelicula6{
-    
-        background-image: url(../FYMYOSHIO/Caratula\ hellboy.jpg);
-        background-size: cover;
-        position: absolute;
-        left: 75%;
-        top: 108%;
-    
-        width: 225px;
-        height: 325px;
-        border: 1px solid rgb(53, 53, 53);
-        border-radius: 15px;
-    }
-    .Suspenso
-    {
-        background-color: rgb(53, 53, 53);
-        color: rgb(240, 214, 187);
-        width: 90px;
-        height: 35px;
-        padding: 5px 5px;
-        left: 40px;
-        border-style: none;
-        top: 15%;
-        position: fixed;
-    }
-    .animacion
-    {
-        background-color: rgb(53, 53, 53);
-        color: rgb(240, 214, 187);
-        width: 90px;
-        height: 35px;
-        padding: 5px 5px;
-        border-style: none;
-        top: 15%;
-        left: 135px;
-        position: fixed;
-    }
     /* Diseño del menu desplegable */
 
     /* rem en todas las unidades de tu CSS te permite aumentar el tamaño tu pagina 
@@ -191,7 +108,7 @@ h1{
         right: 40px;     
         background-size: 100%;
         z-index: 1000;
-        padding-top: 20px;
+        padding-top: 30px;
 
     }
     .menu li
@@ -235,6 +152,7 @@ h1{
         color: rgb(240, 214, 187);
         text-decoration: none;
     }
+    /* menu terminado */
     /* estilado de la pelicula semanal */
     .pelicula-semanal
     {
@@ -243,7 +161,7 @@ h1{
         height: 430px;
         position: absolute;
         left: 35%;
-        top: 15%;
+        top: 25%;
     }
     .semanal
     {
@@ -267,42 +185,6 @@ h1{
         opacity: 1;
         filter: contrast(120%);
     }
-
-
-
-    .slider
-    {
-        display: flex;
-
-        height: 250px;
-        width: 150px;
-        scroll-snap-type: x mandatory;
-
-        overflow-x: scroll;
-        overflow-y: hidden;
-
-        float: left;
-        position: fixed;
-        top: 40%;
-        left: 4%;
-
-        border-radius: 3px;
-        border-color: rgb(53, 53, 53);
-        border: 4px;
-    }
-    .scrolling
-    {
-        flex: 0 0 100%;
-        width: 100%;
-        object-fit: cover;
-        scroll-snap-align: center;
-    }
-    .scrolling img
-    {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
 footer
 {
     background-color: rgb(240, 214, 187);    
@@ -321,4 +203,38 @@ footer
     color: rgb(53, 53, 53);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
+}
+.slide{
+
+    width: 265px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    float: left;
+    position: fixed;
+    left: 4%;
+    top: 35%;
+}
+
+.slide .slide-track{
+    display: flex;
+    animation: scroll 20s linear infinite;
+    width: calc(200px * 14);
+
+}
+.slide .slid {
+    width: 200px;
+}
+.slide .slid img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-200px * 7));
+    }
 }

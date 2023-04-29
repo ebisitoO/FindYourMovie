@@ -4,19 +4,23 @@ html{
     background-size: cover;
     content: normal;
     background-attachment: fixed;
+    scroll-behavior: smooth;
 }
-
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .logo{
-
     position: fixed;
-    left: 6.2%;
-    top: 6%;
+    padding-left: 25px;
 }
 
 .Buscador {
     position: absolute;
     left: 15%;
-    top: 11%;
+    top: 21%;
     transform: translate(0%,-50%);
     padding: 50px;
     
@@ -50,67 +54,60 @@ h1{
 .Buscador:hover input {
     width: 1000px;}
 
-    .pelicula1{
-
-        background-image: url(Batman.jpg);
-        background-size: cover;
+    .contenedorpeli
+    {
+        width: 60%;
+        height: fit-content;
         position: absolute;
-        left: 18%;
-        top: 48%;
-    
-        width: 225px;
-        height: 325px;
-        border: 1px solid rgb(53, 53, 53);
-        border-radius: 15px;
-
-
+        align-content: center;
+        top: 65%;
+        left: 25%;
+        border-style: solid;
+        border-color: aqua;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        
     }
-    
-    .pelicula2{
-    
-        background-image: url(avatar2.jpg);
+    .pelicula
+    {
         background-size: cover;
-        position: absolute;
-        left: 47%;
-        top: 48%;
-    
+        display: flexbox;
+        flex-direction: row;
         width: 225px;
         height: 325px;
-        border: 1px solid rgb(53, 53, 53);
         border-radius: 15px;
-    
     }
-    
-    .pelicula6{
-    
-        background-image: url(Caratula\ hellboy.jpg);
-        background-size: cover;
-        position: absolute;
-        left: 75%;
-        top: 48%;
-    
-        width: 225px;
-        height: 325px;
-        border: 1px solid rgb(53, 53, 53);
-        border-radius: 15px;
-    
+    .encabezado
+
+    {
+        background-color: rgb(240, 214, 187);
+        width: 100%;
+        height: 95px;
+        background-size: 100%;
+        position: fixed;
+        z-index: 1000;
     }
     .menu
     {
         display: flex;
         gap: 10px;
         list-style: none;
-        background-color: rgba(53, 53, 53, .8);
+        background-color: none;
         position: fixed;
         right: 40px;     
         background-size: 100%;
         z-index: 1000;
+        padding-top:30px;
+
     }
     .menu li
     {
         padding: 10px 4px;
         background-color: rgb(53, 53, 53);
         float: right;
+        border-radius: 4px;
     }
     .desplegable-li
     {
@@ -153,7 +150,7 @@ h1{
         height: 430px;
         position: absolute;
         left: 35%;
-        top: 15%;
+        top: 25%;
     }
     .semanal
     {
@@ -177,3 +174,69 @@ h1{
         opacity: 1;
         filter: contrast(120%);
     }
+    footer
+{
+    background-color: rgb(240, 214, 187);    
+    position: absolute;
+    top: 115%;
+    color: rgb(53, 53, 53);
+    width: 100%;
+}
+.nosotros
+{
+    width: 400px;
+    float: right;
+    height: 35px;
+    border-color: rgb(53, 53, 53);
+    padding: 7px 5px;
+    color: rgb(53, 53, 53);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+.scrolling
+{
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+.scrolling img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide{
+
+    width: 265px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    float: left;
+    position: fixed;
+    left: 4%;
+    top: 35%;
+}
+
+.slide .slide-track{
+    display: flex;
+    animation: scroll 20s linear infinite;
+    width: calc(200px * 14);
+
+}
+.slide .slid {
+    width: 200px;
+}
+.slide .slid img {
+    width: 100%;
+    height: 100%;
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-200px * 7));
+    }
+}
