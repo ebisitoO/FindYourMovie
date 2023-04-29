@@ -238,3 +238,7 @@ footer
         transform: translateX(calc(-200px * 7));
     }
 }
+.pelicula .filtro
+{
+    display: none;
+}
