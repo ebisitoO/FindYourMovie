@@ -1,12 +1,12 @@
 function myFunction() {
-    // Declare variables
+// declaracion de variables
     var input, filter, ul, li, a, i;
     input = document.getElementById("buscar");
     filter = input.value.toUpperCase();
     ul = document.getElementById("search");
     li = ul.getElementsByTagName("li");
   
-    // Loop through all list items, and hide those who don't match the search query
+    // Ciclo para mostrar los objetos con el valor de busqueda y ocultar el resto
     for (i = 0; i < li.length; i++) {
       a = li[i].getElementsByTagName("a")[0];
       if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
