@@ -2,6 +2,7 @@ html{
     background-image: url(Avatar2Fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    color: rgb(240, 214, 187);
     content: normal;
     background-attachment: fixed;
     scroll-behavior: smooth;
@@ -58,6 +59,7 @@ body
     width: 588px;
     position: absolute;
     top: 132px;
+    font-size: 45px;
     left: 60px;
     text-align: center;
     border-radius: 15px;
@@ -151,4 +153,22 @@ nav a
     padding: 5px;
     color: rgb(240, 214, 187);
     text-decoration: none;
+}
+footer
+{
+    background-color: rgb(240, 214, 187);    
+    position: absolute;
+    top: 100%;
+    color: rgb(53, 53, 53);
+    width: 100%;
+}
+.nosotros
+{
+    width: 400px;
+    float: right;
+    height: 40px;
+    border-color: rgb(53, 53, 53);
+    padding: 7px 5px;
+    color: rgb(53, 53, 53);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
