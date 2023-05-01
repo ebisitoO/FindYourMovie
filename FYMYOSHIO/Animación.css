@@ -1,3 +1,4 @@
+/* Parte del menu */
 html{
     background-image: url(../IniciosesionFYM/cine.jpg);
     background-repeat: no-repeat;
@@ -12,12 +13,15 @@ html{
     padding: 0;
     box-sizing: border-box;
 }
+body
+{
+    margin: 0;
+}
 .logo{
-
     position: fixed;
     padding-left: 25px;
 }
-
+/*  */
 .Buscador {
     position: absolute;
     left: 15%;
@@ -55,81 +59,33 @@ h1{
 .Buscador:hover input {
     width: 1000px;}
 
-    .contenedorpeli
-    {
-        width: 60%;
-        height: fit-content;
-        position: absolute;
-        align-content: center;
-        top: 65%;
-        left: 25%;
-        border-style: solid;
-        border-color: aqua;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        
-        
-    }
-    .pelicula
-    {
-        background-size: cover;
-        display: flexbox;
-        flex-direction: row;
-        width: 225px;
-        height: 325px;
-        border-radius: 15px;
-    }
-    .pelicula-semanal
-    {
-        display: flex;
-        width: 600px;
-        height: 430px;
-        position: absolute;
-        left: 35%;
-        top: 25%;
-    }
-    .semanal
-    {
-        display: flex;
-        width: 600px;
-        height: 230px;
-        flex-grow: 1;
-    }
-    .semanal img
-    {
-        width: 0px;
-        flex-grow: 1;
-        object-fit: cover;
-        opacity: .8;
-        transition: .5s ease;
-    }
-    .semanal img:hover 
-    {
-        cursor: crosshair;
-        width: 300px;
-        opacity: 1;
-        filter: contrast(120%);
-    }
-    footer
-    {
-        background-color: rgb(240, 214, 187);    
-        position: absolute;
-        top: 115%;
-        color: rgb(53, 53, 53);
-        width: 100%;
-    }
-    .nosotros
-    {
-        width: 400px;
-        float: right;
-        height: 40px;
-        border-color: rgb(53, 53, 53);
-        padding: 7px 5px;
-        color: rgb(53, 53, 53);
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: larger;
-    }
+.contenedorpeli
+{
+    width: 60%;
+    height: fit-content;
+    position: absolute;
+    align-content: center;
+    top: 65%;
+    left: 25%;
+    border-style: solid;
+    border-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pelicula
+{
+    background-size: cover;
+    width: 225px;
+    height: 325px;
+    border-radius: 15px;
+}
+
+    /* Diseño del menu desplegable */
+
+    /* rem en todas las unidades de tu CSS te permite aumentar el tamaño tu pagina 
+    (ya sea por cambio de diseño o por tamaño de la pantalla) con solo aumentar o 
+    disminuir el font-size en el elemento html  */
     .encabezado
 
     {
@@ -194,50 +150,119 @@ h1{
         color: rgb(240, 214, 187);
         text-decoration: none;
     }
-
-    .scrolling
+    /* menu terminado */
+    /* estilado de la pelicula semanal */
+    .pelicula-semanal
     {
-        flex: 0 0 100%;
-        width: 100%;
-        object-fit: cover;
-        scroll-snap-align: center;
-    }
-    .scrolling img
-    {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .slide{
-
-        width: 265px;
-        height: auto;
-        margin: auto;
-        overflow: hidden;
-        float: left;
-        position: fixed;
-        left: 4%;
-        top: 35%;
-    }
-    
-    .slide .slide-track{
         display: flex;
-        animation: scroll 20s linear infinite;
-        width: calc(200px * 14);
-    
+        width: 600px;
+        height: 430px;
+        position: absolute;
+        left: 35%;
+        top: 25%;
     }
-    .slide .slid {
-        width: 200px;
+    .semanal
+    {
+        display: flex;
+        width: 600px;
+        height: 230px;
+        flex-grow: 1;
     }
-    .slide .slid img {
-        width: 100%;
-        height: 100%;
+    .semanal img
+    {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease;
     }
-    @keyframes scroll {
-        0%{
-            transform: translateX(0);
-        }
-        100%{
-            transform: translateX(calc(-200px * 7));
-        }
+    .semanal img:hover 
+    {
+        cursor: crosshair;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(120%);
     }
+footer
+{
+    background-color: rgb(240, 214, 187);    
+    position: absolute;
+    top: 180%;
+    color: rgb(53, 53, 53);
+    width: 100%;
+}
+.nosotros
+{
+    width: 400px;
+    float: right;
+    height: 40px;
+    border-color: rgb(53, 53, 53);
+    padding: 7px 5px;
+    color: rgb(53, 53, 53);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+.slide{
+
+    width: 265px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    float: left;
+    position: fixed;
+    left: 4%;
+    top: 35%;
+}
+
+.slide .slide-track{
+    display: flex;
+    animation: scroll 20s linear infinite;
+    width: calc(200px * 14);
+
+}
+.slide .slid {
+    width: 200px;
+}
+.slide .slid img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-200px * 7));
+    }
+}
+
+.contenedorpeli ul
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contenedorpeli li a
+{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    background-color: rgb(53, 53, 53);
+    color: #f0d6bb;
+    font-size: 25px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.contenedorpeli li img:hover
+{
+    filter: saturate(140%);
+    -moz-box-shadow: 0px 0px 30px #f0d6bb;
+    -webkit-box-shadow: 0px 0px 30px #f0d6bb;
+    box-shadow: 0px 0px 30px #f0d6bb;
+}
+.contenedorpeli li img
+{
+    transition: .4s ease;
+}

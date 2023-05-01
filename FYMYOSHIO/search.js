@@ -1,16 +1,18 @@
-document.addEventListener("keyup", e=>{
-
-    if (e.target.matches("#buscar")){
-
-        if (e.key ==="Escape")e.target.value = ""
-
-        document.querySelectorAll(".pelicula").foreach(movie =>{
-
-            movie.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-            ?movie.classList.remove("filtro")
-            :movie.classList.add("filtro")
-
-        })
+function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("buscar");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("search");
+    li = ul.getElementsByTagName("li");
+  
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
     }
-
-})
+  }
