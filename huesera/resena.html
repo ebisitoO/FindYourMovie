@@ -37,7 +37,7 @@
     <div class="container-user">
         <img src="../Demonresena/descarga.png" alt="" height="60px" width="60px">
         <div class="inputs">
-            <input type="text" placeholder="Cuentanos, ¿qué te pareció?">
+            <input type="text" placeholder="Cuentanos, ¿qué te pareció?" onkeyup="updateText(this.value)">
             <input type="submit" placeholder="Enviar comentario" class="me">
         </div>
     </div>
@@ -47,7 +47,7 @@
         <img src="../Demonresena/descarga.png" alt="" height="60px"  width="60px">
         <div class="comentario">
             <p class="comment">Nombre usuario</p>
-            <p class="comment">Reseña de otro usuario de la página</p>
+            <p id="parrafo"></p>
         </div>
 
         <img src="../Demonresena/descarga.png" alt="" height="60px"  width="60px">
@@ -97,5 +97,6 @@
     </p>
 </div>
 </footer>
+<script src="../buzz/app.js"></script>
 </body>
 </html>
