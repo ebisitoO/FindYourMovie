@@ -1,0 +1,184 @@
+html{
+    background-image: url(63fd331f61eec495542059.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: normal;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+}
+.logo{
+    position: fixed;
+    padding-left: 25px;
+}
+.encabezado
+
+{
+    background-color: rgb(240, 214, 187);
+    width: 100%;
+    height: 95px;
+    background-size: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+.menu
+{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    background-color: none;
+    position: fixed;
+    right: 40px;     
+    background-size: 100%;
+    z-index: 1000;
+    padding-top:30px;
+
+}
+.menu li
+{
+    padding: 10px 4px;
+    background-color: rgb(53, 53, 53);
+    float: right;
+    border-radius: 4px;
+}
+.desplegable-li
+{
+    position: relative;
+    transition: .3s ease;
+    list-style: none;
+    color: rgb(240, 214, 187);
+    padding: 5px;
+}
+.desplegable-li:hover .desplegable
+{
+    display: block;
+    opacity: 1;
+
+}
+.desplegable
+{
+    background-color: rgb(61, 61, 61);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    opacity: 0;
+    display: none;
+    list-style: none;
+}
+nav a
+{
+    text-align: justify;
+    padding: 5px;
+    color: rgb(240, 214, 187);
+    text-decoration: none;
+}
+
+.container-user
+{
+    border-style: solid;
+    border-color: rgb(240, 214, 187);
+    height: fit-content;
+    width: 430px;
+    background-color: rgba(53, 53, 53.8);
+    display: flex;
+    flex-direction: row;
+    color: rgb(240, 214, 187);
+}
+.inputs
+{
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(240, 214, 187);
+}
+.inputs input
+{
+    width: 180px;
+    height: 60px;
+    background-color: rgb(53, 53, 53);
+    color: rgb(240, 214, 187);
+}
+.inputs input::placeholder
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(240, 214, 187);
+}
+.me
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(53, 53, 53);
+    color: rgb(240, 214, 187);
+}
+.contenedor
+{
+    background-color: rgba(240, 214, 187);
+    height: 450px;
+    width: 980px;
+    color: rgb(53, 53, 53);
+    position: absolute;
+    top: 22.5%;
+    left: 15%;
+}
+.container-global
+{
+    border-style: solid;
+    height: fit-content;
+    width: 430px;
+    height: 450px;
+    background-color: rgba(53, 53, 53);
+    color: rgb(240, 214, 187);
+    float: right;
+    position: relative;
+    bottom: 65px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.comment
+{
+    padding-bottom: 10px;
+    justify-content: space-around;
+    background-color: rgb(53, 53, 53);
+}
+.comentario
+{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: rgb(240, 214, 187);
+    height: 60px;
+    width: 345px;
+    position: relative;
+    left: 60px;
+    bottom: 65px;
+    position: relative;
+}
+footer
+{
+    background-color: rgb(240, 214, 187);    
+    position: absolute;
+    top: 100%;
+    color: rgb(53, 53, 53);
+    width: 100%;
+}
+.nosotros
+{
+    width: 400px;
+    float: right;
+    height: 40px;
+    border-color: rgb(53, 53, 53);
+    padding: 7px 5px;
+    color: rgb(53, 53, 53);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
