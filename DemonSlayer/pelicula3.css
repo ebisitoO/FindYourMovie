@@ -1,5 +1,5 @@
 html{
-    background-image: url(../DemonSlayer/1150497.png);
+    background-image: url(Demon_Slayer_Logo_international.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(240, 214, 187);
@@ -32,7 +32,66 @@ body
     top: 5%;
     border-radius: 20px;
 }
+.postitle
+{
+    position: absolute;
+    right: 4.5%;
+    top: 115px;
+    z-index: 1;
+}
+.divtexto
+{
+    background-color: rgba(53, 53, 53, .8);
+    background-position: center;
+    color: rgb(240, 214, 187);
+    height: 340px fit-content;
+    width: 460px;
+    text-align: center;
+    position: absolute;
+    right: 5.5%;
+    top: 315px;
+    border-radius: 20px;
+}
+.divtexto2
+{
+    background-color: rgba(53, 53, 53, .8);
+    height: 48px;
+    width: 588px;
+    position: absolute;
+    top: 132px;
+    left: 60px;
+    text-align: center;
+    border-radius: 15px;
+    color: rgb(240, 214, 187);
+    font-size: 45px;
+    align-items: center;
+}
+.divposvid
+{
+    position: absolute;
+    top: 180px;
+    left: 64px;
+}
+
+button
+{
+    background-color: rgba(53, 53, 53, .8);
+    color: rgb(240, 214, 187);
+    position: absolute;
+    top: 85%;
+    left: 100px;
+    height: 70px;
+    width: 480px;
+    border-style: none;
+    letter-spacing: 8px;
+    font-size: xx-large;
+}
+a
+{
+    color: rgb(240, 214, 187);
+}
 .encabezado
+
 {
     background-color: rgb(240, 214, 187);
     width: 100%;
@@ -95,76 +154,6 @@ nav a
     color: rgb(240, 214, 187);
     text-decoration: none;
 }
-.postitle
-{
-    position: absolute;
-    right: 9%;
-    top: 15%;
-    z-index: 1;
-}
-.divtexto
-{
-    background-color: rgba(53, 53, 53, .8);
-    background-position: center;
-    color: rgb(240, 214, 187);
-    height: 340px;
-    width: 460px;
-    text-align: center;
-    position: absolute;
-    right: 5.5%;
-    top: 285px;
-    border-radius: 20px;
-}
-.divtexto2
-{
-    background-color: rgba(53, 53, 53, .8);
-    height: 48px;
-    width: 588px;
-    position: absolute;
-    top: 132px;
-    left: 60px;
-    font-size: 45px;
-    text-align: center;
-    border-radius: 15px;
-}
-.divposvid
-{
-    position: absolute;
-    top: 180px;
-    left: 64px;
-}
- .boton
-{
-    background-color: rgba(53, 53, 53, .8);
-    color: rgb(240, 214, 187);
-    font-style: bold;
-} 
-button
-{
-    background-color: rgba(53, 53, 53, .8);
-    color: rgb(240, 214, 187);
-    position: absolute;
-    top: 85%;
-    left: 100px;
-    height: 70px;
-    width: 480px;
-    border-style: none;
-    letter-spacing: 8px;
-    font-size: xx-large;
-}
-a
-{
-    color: rgb(240, 214, 187);
-}
-header
-{
-    background-color: rgb(53, 53, 53);
-    color: rgb(240, 214, 187);
-    width: 1480px;
-    height: 80px;
-    position: absolute;
-    left: 10px;
-}
 footer
 {
     background-color: rgb(240, 214, 187);    
@@ -182,4 +171,5 @@ footer
     padding: 7px 5px;
     color: rgb(53, 53, 53);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
 }
