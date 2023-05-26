@@ -1,8 +1,7 @@
 html{
-    background-image: url(CoralineFondooo.jpg);
+    background-image: url(../IniciosesionFYM/cine.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: rgb(240, 214, 187);
     content: normal;
     background-attachment: fixed;
     scroll-behavior: smooth;
@@ -21,81 +20,6 @@ body
     position: fixed;
     padding-left: 25px;
 }
-.divfondotitle
-{
-    background-color: rgb(53, 53, 53);
-    width: fit-content;
-    height: fit-content;
-    font-size:70px;
-    position: absolute;
-    right: 4.5%;
-    top: 5%;
-    border-radius: 20px;
-}
-.postitle
-{
-    position: absolute;
-    right: 4.5%;
-    top: 80px;
-    z-index: 1;
-}
-.divtexto
-{
-    background-color: rgba(53, 53, 53, .8);
-    background-position: center;
-    color: rgb(240, 214, 187);
-    height: 340px fit-content;
-    width: 460px;
-    text-align: justify;
-    position: absolute;
-    right: 5.5%;
-    padding: 10px 10px;
-    top: 265px;
-    border-radius: 20px;
-}
-.divtexto2
-{
-    background-color: rgba(53, 53, 53, .8);
-    height: 48px;
-    width: 588px;
-    position: absolute;
-    top: 132px;
-    left: 60px;
-    text-align: center;
-    border-radius: 15px;
-    font-size: 45px;
-}
-.divposvid
-{
-    position: absolute;
-    top: 180px;
-    left: 64px;
-}
-
-button
-{
-    background-color: rgba(53, 53, 53, .8);
-    color: rgb(240, 214, 187);
-    position: absolute;
-    top: 85%;
-    left: 100px;
-    height: 70px;
-    width: 480px;
-    border-style: none;
-    letter-spacing: 8px;
-    font-size: xx-large;
-}
-a
-{
-    color: rgb(240, 214, 187);
-}
-
-nav
-{
-    background-color: rgb(53, 53, 53);
-    
-}
-
 .encabezado
 
 {
@@ -159,4 +83,14 @@ nav a
     padding: 5px;
     color: rgb(240, 214, 187);
     text-decoration: none;
+}
+.contenedor
+{
+    border: solid aqua 4px;
+    height: 240px;
+    width: 60%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
