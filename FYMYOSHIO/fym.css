@@ -200,40 +200,6 @@ footer
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
 }
-.slide{
-
-    width: 265px;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-    float: left;
-    position: fixed;
-    left: 4%;
-    top: 35%;
-}
-
-.slide .slide-track{
-    display: flex;
-    animation: scroll 20s linear infinite;
-    width: calc(200px * 14);
-
-}
-.slide .slid {
-    width: 200px;
-}
-.slide .slid img {
-    width: 100%;
-    height: 100%;
-}
-
-@keyframes scroll {
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(calc(-200px * 7));
-    }
-}
 
 .contenedorpeli ul
 {
@@ -265,7 +231,134 @@ footer
 {
     transition: .4s ease;
 }
-@media screen and (max-height: 800px){
+@media screen and (max-width: 2560px){
+    .contenedorpeli{
+        left: 20%;
+    }
+    .Buscador:hover input {
+        width: 1800px;}
+    .pelicula-semanal{
+        left: 40%;
+        top: 32%;
+    }
+}
+
+@media screen and (max-width: 1440px){
+
+.Buscador {
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    transform: translate(0%,-50%);
+    padding: 50px;
+    
+}
+.Buscador:hover input {
+    width: 1000px;}
+
+
+    .pelicula-semanal
+    {
+        display: flex;
+        width: 600px;
+        height: 430px;
+        position: absolute;
+        left: 30%;
+        top: 20%;
+    }
+    
+.contenedorpeli
+{
+    width: 60%;
+    height: fit-content;
+    position: absolute;
+    align-content: center;
+    top: 50%;
+    left: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+}
+
+
+    @media screen and (max-width: 1024px)
+{
+        .Buscador {
+            position: absolute;
+            left: 10%;
+            top: 20%;
+            transform: translate(0%,-50%);
+            padding: 50px;
+            
+        }
+        .Buscador:hover input {
+            width: 800px;}
+        
+        
+            .pelicula-semanal
+            {
+                display: flex;
+                width: 600px;
+                height: 230px;
+                position: absolute;
+                left: 25%;
+                top: 25%;
+            }
+            
+        .contenedorpeli
+        {
+            width: 60%;
+            height: fit-content;
+            position: absolute;
+            align-content: center;
+            top: 65%;
+            left: 25%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        }
+
+@media screen and (max-width: 820px)
+        {
+                .Buscador {
+                    position: absolute;
+                    left: 3%;
+                    top: 15%;
+                    transform: translate(0%,-50%);
+                    padding: 50px;
+                    
+                }
+                .Buscador:hover input {
+                    width: 650px;}
+                
+                
+                    .pelicula-semanal
+                    {
+                        display: flex;
+                        width: 600px;
+                        height: 230px;
+                        position: absolute;
+                        left: 15%;
+                        top: 20%;
+                    }
+                    
+                .contenedorpeli
+                {
+                    width: 60%;
+                    height: fit-content;
+                    position: absolute;
+                    align-content: center;
+                    top: 45%;
+                    left: 23%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+                }
+
+ @media screen and (max-height: 800px){
     .Buscador{
         top: 22%;
     }
@@ -277,3 +370,343 @@ footer
     }
 
  }
+
+@media screen and (max-width: 768px){
+
+            .Buscador {
+                position: absolute;
+                left: 4%;
+                top: 15%;
+                transform: translate(0%,-50%);
+                padding: 50px;
+                
+            }
+            .Buscador:hover input {
+                width: 600px;}
+            
+            
+                .pelicula-semanal
+                {
+                    display: flex;
+                    width: 600px;
+                    height: 230px;
+                    position: absolute;
+                    left: 10%;
+                    top: 20%;
+                }
+                
+            .contenedorpeli
+            {
+                width: 60%;
+                height: fit-content;
+                position: absolute;
+                align-content: center;
+                top: 50%;
+                left: 21%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            }
+            @media screen and (max-width: 540px){
+
+                .Buscador {
+                    position: absolute;
+                    left: 4%;
+                    top: 18%;
+                    transform: translate(0%,-50%);
+                    padding: 50px;
+                    
+                }
+                .Buscador:hover input {
+                    width: 530px;}
+                
+                
+                    .pelicula-semanal
+                    {
+                        display: flex;
+                        width: 600px;
+                        height: 230px;
+                        position: absolute;
+                        left: 5%;
+                        top: 23%;
+                    }
+                    
+                .contenedorpeli
+                {
+                    width: 60%;
+                    height: fit-content;
+                    position: absolute;
+                    align-content: center;
+                    top: 58%;
+                    left: 40%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+                
+                }
+/*Menu hamburguesa iniciara desde este punto*/
+
+@media screen and (max-width: 425px){
+
+    .menu
+    {
+        display: none;
+    }
+  
+    
+
+                .Buscador {
+                    position: absolute;
+                    left: 6%;
+                    top: 15%;
+                    transform: translate(0%,-50%);
+                    padding: 50px;
+                    
+                }
+                .Buscador:hover input {
+                    width: 250px;}
+                
+                
+                    .pelicula-semanal
+                    {
+                        display: flex;
+                        width: 250px;
+                        height: 230px;
+                        position: absolute;
+                        left: 20%;
+                        top: 20%;
+                    }
+                    
+                .contenedorpeli
+                {
+                    width: 60%;
+                    height: fit-content;
+                    position: absolute;
+                    align-content: center;
+                    top: 45%;
+                    left: 21%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+                }
+
+@media screen and (max-width: 414px){
+
+    .menu
+    {
+        display: none;
+    }
+
+                    .Buscador {
+                        position: absolute;
+                        left: 6%;
+                        top: 15%;
+                        transform: translate(0%,-50%);
+                        padding: 50px;
+                        
+                    }
+                    .Buscador:hover input {
+                        width: 250px;}
+                    
+                    
+                        .pelicula-semanal
+                        {
+                            display: flex;
+                            width: 250px;
+                            height: 230px;
+                            position: absolute;
+                            left: 20%;
+                            top: 20%;
+                        }
+                        
+                    .contenedorpeli
+                    {
+                        width: 60%;
+                        height: fit-content;
+                        position: absolute;
+                        align-content: center;
+                        top: 50%;
+                        left: 21%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                    }
+                    }
+          
+@media screen and (max-width: 412px){
+
+    .menu
+    {
+        display: none;
+    }
+
+                    .Buscador {
+                        position: absolute;
+                        left: 6%;
+                        top: 15%;
+                        transform: translate(0%,-50%);
+                        padding: 50px;
+                        
+                    }
+                    .Buscador:hover input {
+                        width: 250px;}
+                    
+                    
+                        .pelicula-semanal
+                        {
+                            display: flex;
+                            width: 250px;
+                            height: 230px;
+                            position: absolute;
+                            left: 20%;
+                            top: 20%;
+                        }
+                        
+                    .contenedorpeli
+                    {
+                        width: 60%;
+                        height: fit-content;
+                        position: absolute;
+                        align-content: center;
+                        top: 50%;
+                        left: 21%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                    }
+                    }
+
+@media screen and (max-width: 375px){
+
+    .menu
+    {
+        display: none;
+    }
+
+                        .Buscador {
+                            position: absolute;
+                            left: 6%;
+                            top: 20%;
+                            transform: translate(0%,-50%);
+                            padding: 50px;
+                            
+                        }
+                        .Buscador:hover input {
+                            width: 250px;}
+                        
+                        
+                            .pelicula-semanal
+                            {
+                                display: flex;
+                                width: 250px;
+                                height: 230px;
+                                position: absolute;
+                                left: 20%;
+                                top: 25%;
+                            }
+                            
+                        .contenedorpeli
+                        {
+                            width: 60%;
+                            height: fit-content;
+                            position: absolute;
+                            align-content: center;
+                            top: 65%;
+                            left: 21%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                        }
+                        }
+
+                
+@media screen and (max-width: 360px){
+
+    .menu
+    {
+        display: none;
+    }
+
+                        .Buscador {
+                            position: absolute;
+                            left: 6%;
+                            top: 18%;
+                            transform: translate(0%,-50%);
+                            padding: 50px;
+                            
+                        }
+                        .Buscador:hover input {
+                            width: 200px;}
+                        
+                        
+                            .pelicula-semanal
+                            {
+                                display: flex;
+                                width: 250px;
+                                height: 230px;
+                                position: absolute;
+                                left: 15%;
+                                top: 25%;
+                            }
+                            
+                        .contenedorpeli
+                        {
+                            width: 60%;
+                            height: fit-content;
+                            position: absolute;
+                            align-content: center;
+                            top: 70%;
+                            left: 20%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                        }
+                        }
+    
+
+@media screen and (max-width: 280px){
+
+    .menu
+    {
+        display: none;
+    }
+
+                        .Buscador {
+                            position: absolute;
+                            left: 1px;
+                            top: 15%;
+                            transform: translate(0%,-50%);
+                            padding: 50px;
+                            
+                        }
+                        .Buscador:hover input {
+                            width: 250px;}
+                        
+                        
+                            .pelicula-semanal
+                            {
+                                display: flex;
+                                width: 250px;
+                                height: 230px;
+                                position: absolute;
+                                left: 20%;
+                                top: 20%;
+                            }
+                            
+                        .contenedorpeli
+                        {
+                            width: 60%;
+                            height: fit-content;
+                            position: absolute;
+                            align-content: center;
+                            top: 60%;
+                            left: 21%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                        }
+                        }
+                    
