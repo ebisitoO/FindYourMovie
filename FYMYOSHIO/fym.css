@@ -265,3 +265,15 @@ footer
 {
     transition: .4s ease;
 }
+@media screen and (max-height: 800px){
+    .Buscador{
+        top: 22%;
+    }
+    .pelicula-semanal{
+        top: 30%;
+    }
+    .contenedorpeli{
+        top: 80%;
+    }
+
+ }

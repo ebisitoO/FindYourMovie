@@ -1,0 +1,12 @@
+html {
+  background-image: url(../deadpool/22986-deadpool.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: normal;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}

@@ -1,0 +1,93 @@
+@import 'mixinsresena';
+html{
+   
+    background-image: url(../FYMYOSHIO/Avatar2Fondo.jpg);
+     @include init;
+}
+body
+{
+    margin: 0;
+}
+.logo{
+    position: fixed;
+    padding-left: 25px;
+}
+.encabezado
+{
+    @include encabezado;
+}
+.menu
+{
+    @include menuu;
+}
+.desplegable-li
+{
+    @include desplegable-li;
+}
+.desplegable-li:hover .desplegable
+{
+    @include desplegable-hover
+}
+.desplegable
+{
+    @include desplegable
+}
+nav a
+{
+    @include nav-a
+}
+.container-user
+{
+    @include container-user
+}
+.inputs
+{
+    @include inputs
+}
+input
+{
+    @include input
+}
+.inputs input::placeholder
+{
+    @include placeholder
+}
+.me
+{
+    @include me
+}
+.contenedor
+{
+    @include contenedor
+}
+.container-global
+{
+    @include container-global
+}
+.comment
+{
+    @include comment
+}
+.comentario
+{
+    @include comentario
+}
+footer
+{
+    background-color: rgb(240, 214, 187);    
+    position: absolute;
+    top: 100%;
+    color: rgb(53, 53, 53);
+    width: 100%;
+}
+.nosotros
+{
+    width: 400px;
+    float: right;
+    height: 40px;
+    border-color: rgb(53, 53, 53);
+    padding: 7px 5px;
+    color: rgb(53, 53, 53);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}

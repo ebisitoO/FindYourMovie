@@ -1,8 +1,6 @@
-html{
-    background-image: url(22986-deadpool.jpg);
+@mixin init {
     background-repeat: no-repeat;
     background-size: cover;
-    color: #f0d7bc;
     content: normal;
     background-attachment: fixed;
     scroll-behavior: smooth;
@@ -10,22 +8,25 @@ html{
     padding: 0;
     box-sizing: border-box;
 }
-body
+@mixin pelicula-titulo
 {
-    margin: 0;
+    background-color: rgb(53, 53, 53);
+    width: fit-content;
+    height: fit-content;
+    font-size:70px;
+    position: absolute;
+    right: 4.5%;
+    top: 5%;
+    border-radius: 20px;
 }
-.logo{
-    position: fixed;
-    padding-left: 25px;
-}
-.postitle
+@mixin foto-title
 {
     position: absolute;
     right: 4.5%;
     top: 15%;
     z-index: 1;
 }
-.divtexto
+@mixin resumen
 {
     background-color: rgba(53, 53, 53, .8);
     background-position: center;
@@ -39,7 +40,7 @@ body
     border-radius: 20px;
     padding: 10px 10px;
 }
-.divtexto2
+@mixin trailerfont
 {
     background-color: rgba(53, 53, 53, .8);
     height: 48px;
@@ -50,19 +51,19 @@ body
     text-align: center;
     border-radius: 15px;
 }
-.divposvid
+@mixin trailervid
 {
     position: absolute;
     top: 180px;
     left: 64px;
 }
- .boton
+@mixin boton1
 {
     background-color: rgba(53, 53, 53, .8);
     color: rgb(240, 214, 187);
     font-style: bold;
-} 
-button
+}
+@mixin boton2
 {
     background-color: rgba(53, 53, 53, .8);
     color: rgb(240, 214, 187);
@@ -75,11 +76,7 @@ button
     letter-spacing: 8px;
     font-size: xx-large;
 }
-a
-{
-    color: rgb(240, 214, 187);
-}
-.encabezado
+@mixin encabezado
 {
     background-color: rgb(240, 214, 187);
     width: 100%;
@@ -88,7 +85,7 @@ a
     position: fixed;
     z-index: 1000;
 }
-.menu
+@mixin menuu
 {
     display: flex;
     gap: 10px;
@@ -99,30 +96,15 @@ a
     background-size: 100%;
     z-index: 1000;
     padding-top: 30px;
-
+    li
+    {
+        padding: 10px 4px;
+        background-color: rgb(53, 53, 53);
+        float: right;
+        border-radius: 4px;
+    }
 }
-.menu li
-{
-    padding: 10px 4px;
-    background-color: rgb(53, 53, 53);
-    float: right;
-    border-radius: 4px;
-}
-.desplegable-li
-{
-    position: relative;
-    transition: .3s ease;
-    list-style: none;
-    color: rgb(240, 214, 187);
-    padding: 5px;
-}
-.desplegable-li:hover .desplegable
-{
-    display: block;
-    opacity: 1;
-
-}
-.desplegable
+@mixin desplegable
 {
     background-color: rgb(61, 61, 61);
     margin: 0;
@@ -135,29 +117,23 @@ a
     display: none;
     list-style: none;
 }
-nav a
+@mixin desplegable-li
+{
+    position: relative;
+    transition: .3s ease;
+    list-style: none;
+    color: rgb(240, 214, 187);
+    padding: 5px;
+}
+@mixin desplegable-hover
+{
+    display: block;
+    opacity: 1;
+}
+@mixin nav-a
 {
     text-align: justify;
     padding: 5px;
     color: rgb(240, 214, 187);
     text-decoration: none;
-}
-footer
-{
-    background-color: rgb(240, 214, 187);    
-    position: absolute;
-    top: 100%;
-    color: rgb(53, 53, 53);
-    width: 100%;
-}
-.nosotros
-{
-    width: 400px;
-    float: right;
-    height: 40px;
-    border-color: rgb(53, 53, 53);
-    padding: 7px 5px;
-    color: rgb(53, 53, 53);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
 }

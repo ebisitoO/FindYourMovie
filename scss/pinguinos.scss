@@ -1,0 +1,66 @@
+@import 'mixins';
+html{
+   
+    background-image: url(../PinguinosFYM/penguins-of-madagascar-movie-wallpaper-2736x1824_41.jpg);
+     @include init;
+}
+body
+{
+    margin: 0;
+}
+.logo{
+    position: fixed;
+    padding-left: 25px;
+}
+
+.postitle
+{
+    @include foto-title;
+}
+.divtexto
+{
+    @include resumen;
+}
+.divtexto2
+{
+    @include trailerfont
+}
+.divposvid
+{
+    @include trailervid;
+}
+.boton
+{
+    @include boton1;
+}
+button{
+    @include boton2;
+}
+a
+{
+    color: rgb(240, 214, 187);
+}
+.encabezado
+{
+    @include encabezado;
+}
+.menu
+{
+    @include menuu;
+}
+.desplegable-li
+{
+    @include desplegable-li;
+}
+.desplegable-li:hover .desplegable
+{
+    @include desplegable-hover
+}
+.desplegable
+{
+    @include desplegable
+}
+nav a
+{
+    @include nav-a
+}

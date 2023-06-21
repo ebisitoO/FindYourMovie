@@ -1,0 +1,147 @@
+html {
+  background-image: url(../deadpool/22986-deadpool.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: normal;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.logo {
+  position: fixed;
+  padding-left: 25px;
+}
+
+.postitle {
+  position: absolute;
+  right: 4.5%;
+  top: 15%;
+  z-index: 1;
+}
+
+.divtexto {
+  background-color: rgba(53, 53, 53, 0.8);
+  background-position: center;
+  color: rgb(240, 214, 187);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 460px;
+  text-align: justify;
+  position: absolute;
+  right: 5.5%;
+  top: 305px;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+
+.divtexto2 {
+  background-color: rgba(53, 53, 53, 0.8);
+  height: 48px;
+  width: 588px;
+  position: absolute;
+  top: 132px;
+  left: 60px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.divposvid {
+  position: absolute;
+  top: 180px;
+  left: 64px;
+}
+
+.boton {
+  background-color: rgba(53, 53, 53, 0.8);
+  color: rgb(240, 214, 187);
+  font-style: bold;
+}
+
+button {
+  background-color: rgba(53, 53, 53, 0.8);
+  color: rgb(240, 214, 187);
+  position: absolute;
+  top: 85%;
+  left: 100px;
+  height: 70px;
+  width: 480px;
+  border-style: none;
+  letter-spacing: 8px;
+  font-size: xx-large;
+}
+
+a {
+  color: rgb(240, 214, 187);
+}
+
+.encabezado {
+  background-color: rgb(240, 214, 187);
+  width: 100%;
+  height: 95px;
+  background-size: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  background-color: none;
+  position: fixed;
+  right: 40px;
+  background-size: 100%;
+  z-index: 1000;
+  padding-top: 30px;
+}
+.menu li {
+  padding: 10px 4px;
+  background-color: rgb(53, 53, 53);
+  float: right;
+  border-radius: 4px;
+}
+
+.desplegable-li {
+  position: relative;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  list-style: none;
+  color: rgb(240, 214, 187);
+  padding: 5px;
+}
+
+.desplegable-li:hover .desplegable {
+  display: block;
+  opacity: 1;
+}
+
+.desplegable {
+  background-color: rgb(61, 61, 61);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  opacity: 0;
+  display: none;
+  list-style: none;
+}
+
+nav a {
+  text-align: justify;
+  padding: 5px;
+  color: rgb(240, 214, 187);
+  text-decoration: none;
+}
